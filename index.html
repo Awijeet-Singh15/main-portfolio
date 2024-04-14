@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+   
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .body{
+      background-color: rgb(27, 1, 70);
+      color: rgb(247, 94, 94);
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 10vh;
+        background-color: rgb(28, 18, 83);
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 2vw;
+        font-size: 2vh;
+    }
+    nav ul li a{
+        text-decoration: none;
+        margin: 0 2vw;
+        font-size:2vh ;
+        color: aliceblue;
+    }
+    nav ul li a:hover{
+        text-decoration: none;
+        margin: 0 2vw;
+        font-size:2.5vh;
+        color:rgb(248, 69, 3);
+        text-shadow: 3px 2px 20px,3px 2px 20px,3px 2px 20px;
+    }
+    .left{
+        font-size: xx-large;
+        font-family:cursive;
+        -webkit-text-stroke: 2px rgb(241, 65, 55);
+        color:rgb(85, 55, 250);
+        opacity: 0;
+        animation: slide 2s ease forwards;
+    }
+    @keyframes slide{
+        0% {
+            transform:translateX(-100px);
+            opacity: 0;
+        }
+        100% {
+            transform:translateX(0px);
+            opacity: 1;
+        }
+    }
+    #li1{
+        opacity: 0;
+        animation: slida .7s ease forwards;
+    }
+    @keyframes slida{
+        0% {opacity: 0;
+            transform:translateY( -100px);}
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }}
+            #li2{
+        opacity: 0;
+        animation: slidb 1.4s ease forwards;
+    }
+    @keyframes slidb{
+        0% {opacity: 0;
+            transform:translateY( -100px);}
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }}
+            #li3{
+        opacity: 0;
+        animation: slidc 2.1s ease forwards;
+    }
+    @keyframes slidc{
+        0% {opacity: 0;
+            transform:translateY( -100px);}
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }}
+            #li4{
+        opacity: 0;
+        animation: slidd 2.8s ease forwards;
+    }
+    @keyframes slidd{
+        0% {opacity: 0;
+            transform:translateY( -100px);}
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+
+    }
+    .first{
+        display: flex;
+        justify-content: space-around;
+        margin: 23px 0px;
+    }
+    .first .leftSec{
+        width: 40%;
+    }
+    
+    #my{
+        height:60vh;
+        width:50vw;
+    }
+    .pur{
+        color:lavender;
+    }
+    .leftSec{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        font-size:xx-large;
+        margin-left: 30px;
+    }
+    #element{
+        color:lavender;
+    }
+   .home-sci a{
+        display: inline-flex;
+         justify-content: center;
+        align-items: center;
+        height: 4vh;
+        width: 4vh;
+        background-color: transparent;
+        border: 2px solid aqua;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 20px;
+        color: aqua;
+        margin: 30px 15px 30px 0px;
+       
+    }
+    #l1{
+        animation-delay: 0.5s;
+        animation: pragat1 1.4s ease-out forwards;
+     }
+     @keyframes pragat1{
+        0%{
+            opacity: 0;
+            transform:translateX(-100px);
+        }
+        100%{
+            opacity: 1;
+            transform:translateX(0px);
+        }
+    }
+    #l2{
+        animation-delay: 0.5s;
+        animation: pragat2 1.4s ease-out forwards;
+     }
+     @keyframes pragat2{
+        0%{
+            opacity: 0;
+            transform:translateY(-100px);
+        }
+        100%{
+            opacity: 1;
+            transform:translateY(0px);
+        }
+    }
+    .pur{
+        animation-delay: 0.5s;
+        animation: pragat2 2.14s ease forwards;
+    }
+    #l3{ animation-delay: 0.5s;
+        animation: pragat3 1.4s ease-out forwards;
+     }
+     @keyframes pragat3{
+        0%{
+            opacity: 0;
+            transform:translateX(100px);
+        }
+        100%{
+            opacity: 1;
+            transform:translateX(0px);
+        }
+    }
+    .home-sci a:hover{
+        color: black;
+        background-color: aqua;
+        box-shadow: 0 0 30px aqua, 0 0 30px aqua, 0 0 30px aqua, 0 0 30px aqua;
+    }
+    .btn-box{
+        display: inline-flex;
+        text-decoration: none;
+         border: 2px solid aqua; 
+         background-color: aqua;
+         color: black;
+         font-weight: 600;
+         padding: 12px 28px;
+         font-size: 18px;
+         border-radius: 40px;
+        letter-spacing: 1px;
+        width: 12vw;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        animation: pragat 2.8s ease-out forwards;
+        margin-top: 30px;
+    }
+    .btn-box:hover{
+       
+        box-shadow: 0 0 30px aqua, 0 0 30px aqua, 0 0 30px aqua, 0 0 30px aqua;
+      
+    }
+    @keyframes pragat{
+        0%{
+            opacity: 0;
+            transform:translateY(100px);
+        }
+        100%{
+            opacity: 1;
+            transform:translateY(0px);
+        }
+    }
+    .rightsection{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    hr{
+        border: 0;
+        height:1px;
+        background: rgb(85 55 250);
+        margin: 40px;
+    }
+     .secondsection{   /* ange ch */
+        max-width: 80vw;
+        margin: auto;
+        height: 60vh;
+    }
+  .gray{
+        color: gray;
+  }
+  .part{      /* ange ch */ 
+    display: flex;
+     height: 50vh; 
+  }
+  .part1{    /* ange ch */
+    width: 40vw;
+    height: 50vh;
+  }
+  .box{
+    background: white;
+    width: 40vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .secondsection .vertical{
+    background: white;
+    height: 5vh;
+    width: 1px;
+    display: flex;
+    
+
+  }
+ .pop{
+    height: 30%;
+    width: 25%;
+    margin-top: 5vh;
+    margin-left: -12.5%;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+  #school1{
+    height: 100%;
+    width: 90%;
+    /* margin-top: 5vh;
+    margin-left: -100px; */
+    /* position: relative; */
+    overflow: hidden;
+  }
+  .popup{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    overflow: hidden;
+     z-index: 10;
+    transform:translateY(91%);
+    transition: 0.3s;
+    color: aqua;
+    font-weight: 600;
+    margin-left:9%;
+    /* background-color: rgba(red, green, blue, alpha); */
+  }
+  .pop:hover .popup{
+    transform: translateY(19%);
+    
+    text-shadow: 1px 1px 20px rgb(27, 1, 70), 1px 1px 20px rgb(27, 1, 70) , 1px 1px 20px rgb(27, 1, 70), 1px 1px 20px rgb(27, 1, 70), 1px 1px 20px rgb(27, 1, 70), 1px 1px 20px rgb(27, 1, 70);
+  }
+  .pop:hover #school1{
+    filter: drop-shadow(3px 3px 9px aqua);
+  }
+  .sectionthree{
+    overflow:hidden;
+  }
+  .cars{
+    height:20vh;
+    width:95vw;
+    margin:auto;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-around;
+    overflow: hidden;
+  animation: slide 8s linear infinite;
+  filter: drop-shadow(6px 6px 20px aqua);
+} 
+  #car1{
+    height:18vh;
+    width:20vw;
+    overflow:hidden;
+  }
+  @keyframes ram {
+    0% {
+    transform: translateX(-95%);
+  }
+  
+  100% {
+    transform: translateX(95%);
+  }
+}
+footer{
+    background-color: rgb(28, 18, 83);
+    /* height:233px; */
+    margin-top:4vh;
+    padding: 12px 0px;
+}
+.footer{
+    display:flex;
+    padding:3vh 4vw;
+    justify-content:space-evenly;
+}
+.footer ul{
+    list-style: none;
+}
+footer .footer-rigts{
+    text-align: center;
+    color: gray;
+}
+.footer-first{
+    display: flex;
+    flex-direction: column;
+}
+.footer-second a{
+        display: inline-flex;
+         justify-content: center;
+        align-items: center;
+        height: 4vh;
+        width: 4vh;
+        background-color: transparent;
+        border: 2px solid aqua;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 20px;
+        color: aqua;
+        margin: 30px 15px 30px 0px;
+       
+    }
+    .footer-second a:hover{
+        color: black;
+        background-color: aqua;
+        box-shadow: 0 0 30px aqua, 0 0 30px aqua, 0 0 30px aqua, 0 0 30px aqua;
+    }
+
+  @media all and (max-width:760px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 10vh;
+        background-color:  rgb(28, 18, 83);
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .leftSec{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        font-size:larger;
+        margin-left: 30px;
+    }
+    .home-sci a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        width: 20px;
+        background-color: transparent;
+        border: 1px solid aqua;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 10px;
+        color: aqua;
+        margin: 30px 10px 30px 0px;
+       
+    }
+    .btn-box{
+        display: inline-flex;
+        text-decoration: none;
+         border: 1px solid aqua; 
+         background-color: aqua;
+         color: black;
+         font-weight: 600;
+         padding: 6px 5px;
+         font-size: 12px;
+         border-radius: 20px;
+        letter-spacing: 0.3px;
+        width: 20vw;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        animation: pragat 2.8s ease-out forwards;
+    }
+    #my{
+        height:40vh;
+        width:50vw;
+    }
+    .secondsection{   /* ange ch */
+        max-width: 80vw;
+        margin: auto;
+        height: 90vh;}
+        .gray{
+        color: gray;
+        font-size: small;
+  }
+  .head1{
+    font-size: medium;
+  }
+    .part{      /* ange ch */ 
+    display: flex;
+    flex-direction: column;
+     height: 76vh; 
+  }
+  .part1{    /* ange ch */
+    width: 80vw;
+    height: 38vh;          
+  }
+  .box{
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+  }
+  .sectionthree{
+    overflow:hidden;
+  }
+  .cars{
+    height:20vh;
+    width:95vw;
+    margin:auto;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-around;
+    overflow: hidden;
+  animation: slide 30s linear infinite;
+} 
+  #car1{
+    height:18vh;
+    width:20vw;
+    overflow:hidden;
+  }
+  /* @keyframes slide {
+    0% {
+    transform: translateX(-95%);
+  }
+  
+  100% {
+    transform: translateX(95%);
+  }
+} */
+.footer-second a{
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+        align-items: center;
+        height: 4vh;
+        width: 4vh;
+        background-color: transparent;
+        border: 2px solid aqua;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 20px;
+        color: aqua;
+        margin: 8px 7px 8px 0px;
+       
+    }
+  }
+ 
+@media all and (max-width:500px){
+    .secondsection h1{
+        font-size: 16px;
+    }
+    .secondsection p
+{
+    font-size: 12px;
+}}
+@media all and (max-width:300px){
+    nav{
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-around;
+        height: 9vh;
+        background-color: rgb(85, 55, 250);
+        flex-wrap: wrap;
+        flex-shrink:200%;
+        width: 100%;
+    }
+        .left{
+            font-size: larger;
+        }
+        .secondsection p
+{
+    font-size: 11px;
+}
+}
+   </style>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="body">
+    <header>
+        <nav>
+            <div class="left"><b>Awijeet's Portfolio</b></div>
+            <div class="right">
+                <ul>
+                    <li id="li1"><a href="#my">Home</a></li>
+                    <li id="li2"><a href="/">About</a></li>
+                    <li id="li3"><a href="/">Services</a></li>
+                    <li id="li4"><a href="#ram">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="first">
+        <div class="leftSec">
+           <div> Hi, My name is <span class="pur">Awijeet Singh</span></div>
+            <div>and I am a passionate</div>
+            <!-- <div>Web Developer</div> -->
+           <div>  <span id="element"></span></div> 
+            <div class="home-sci">
+                <a href="tel:7398703898" id="l1"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="#"id="l2"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://youtube.com/shorts/Ip__czuM54c?si=pfjmLuqkUp_6Kqv_"id="l3" ><i class='bx bxl-youtube' ></i></a>
+            </div>
+            <a href="#" class="btn-box" >More about me</a>
+        </div>
+        <div class="rightSec"><img id="my" src="mypng.png"></div>
+    </section>
+    <hr>
+    <section class="secondsection">
+        <span class="gray">  What I have done so far</span>
+        <h1 class="head1">   Experiences   </h1>
+        <div class="part">
+        <div class="part1">
+                <div class="box">
+                    <div class="vertical">
+                        <div class="pop">
+                            <img  src="http://clipart-library.com/images_k/school-transparent-background/school-transparent-background-20.png" alt="" id="school1">
+                           <div class="popup">
+                            <h1 class="name">High School</h1>
+                            <p>
+                                I was qualified my high school from<b> Children Army Public School <i> CBSE board</i> </b> with 89% marks.
+                            </p>
+                           </div>
+                       
+                        </div>
+                    </div>
+                    <div class="vertical"> <div class="pop">
+                        <img  src="https://clipartcraft.com/images/school-clipart-transparent-background-3.png" alt="" id="school1">
+                       <div class="popup">
+                        <h1 class="name">Intermediate</h1>
+                        <p>
+                            I was qualified my high Intermediate from<b> Universal Public School <i> CBSE board</i> </b> with 93% marks.
+                        </p>
+                       </div>
+                   
+                    </div></div>
+                </div>
+        </div>
+        <div class="part1">
+            <div class="box">
+                <div class="vertical"><div class="pop">
+                    <img  src="https://cdn-images-1.medium.com/max/1200/1*eHdalKXpZrnlIkps0E2meA.png" alt="" style="width:80%;" id="school1">
+                   <div class="popup">
+                    <h1 class="name">Drop Year</h1>
+                    <p>
+                        In my drop year I am preparing for<b> Jee mains<i>,scored</i><i> 94.567 percentile.</i> </b>
+                    </p>
+                   </div></div>
+                      </div>  
+                <div class="vertical"><div class="pop">
+                    <img  src="https://images.collegedunia.com/public/image/160c05b98c8f0c299950f0d32b4e868c.png?tr=w-720,h-480,c-force" style="width:80%; border-radius:30%;" alt="" id="school1">
+                   <div class="popup">
+                    <h1 class="name">Collage</h1>
+                    <p>
+                        currently I am pursuing a B-Tech degree in <b> in Computer Science and Enginnering at <i> MMMUT, Gorakhpur</i> </b>
+                    </p>
+                   </div></div></div>
+                   
+                
+            </div>
+        </div>
+        </div>
+    </section>
+    <hr>
+     <section class="sectionthree">
+        <h1 style="margin-left:45vw; font-size:5vw;">Skills</h1>
+        <div class="cars" style="margin-top:4vh;">
+            <div class="car">
+                <img src="https://clipartcraft.com/images/html5-logo-png-transparent-5.png" alt="" id="car1">
+            </div>
+            <div class="car">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" alt="" id="car1">
+            </div>
+            <div class="car">
+                <img src="https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png" alt="" id="car1">
+            </div>
+            <div class="car">
+                <img src="https://www.pngall.com/wp-content/uploads/2016/05/C-PNG-Image.png" alt="" id="car1">
+            </div>
+        </div>
+     </section>
+     <footer id="ram">
+        <div class="footer">
+            <div class="footer-first">
+               DEVELOPER-<span class="pur">Awijeet Singh</span>
+               PHONE NO-<span class="pur"> +917398703898</span>
+               EMAIL-<span class="pur">awijeetsingh370@gmail.com</span>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <a href="tel:7398703898" id="l1"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="#"id="l2"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://youtube.com/shorts/Ip__czuM54c?si=pfjmLuqkUp_6Kqv_"id="l3" ><i class='bx bxl-youtube' ></i></a>
+                </ul>
+            </div>
+            <div class="footer-third"> <ul>
+                <a href="#" class="btn-box" >More about me</a>
+            </ul></div>
+           
+        </div>
+        <div class="footer-rigts">
+            Copyrights&#169:www.awijeetportfolio.com  |  All rights reserved.
+        </div>
+     </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>Web Developer</i>.', '&amp; <i>  Coding Enthusiast<i>'],
+          typeSpeed: 45,
+          loop:true
+        });
+      </script>
+</body>
+</html>
